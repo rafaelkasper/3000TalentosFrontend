@@ -26,6 +26,7 @@ A página deve conter:
 - Uma tabela com suas experiências profissionais
 - Uma tabela com a sua escolaridade.
 - Uma lista com cursos e/ou certificados
+- Um formulário de contato
 
 </details>
 
