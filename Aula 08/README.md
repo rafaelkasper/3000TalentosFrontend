@@ -8,6 +8,10 @@
 
 [Introdução ao DOM - Rocketseat](https://blog.rocketseat.com.br/introducao-ao-dom/)
 
+[Bootstrap] - (https://getbootstrap.com/docs/5.3/examples/)
+
+[FontAwesome] - (https://fontawesome.com/)
+
 </details>
 
 ## Exercícios
