@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #d90971;
+  font-size: 1.3em;
+}
+
+h1,
+h2,
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+}
+
+#centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+
+#centro a {
+  color: #fff;
+  text-decoration: none; /*Remove o underline do Link a*/
+}
+
+/* Item ativo */
+ul.topbar li a.active {
+  color: #d90971 !important;
+  font-weight: bold;
+}
+
+/* Traço embaixo do item */
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 5px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active::after {
+  width: 100%;
+  background: #fff;
+}
+
+/* Remove as margens, define tamanho do menu para 100%, e adiciona uma cor de fundo */
+ul.topbar {
+  background: #8a2be2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+  width: 100%;
+}
+
+/* Coloca os itens da lista do Menu lado a lado, e flutua os itens para a esquerda */
+ul.topbar li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+
+/* Estilo dos links dentro da lista */
+ul.topbar li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 0.3em 0 0.3em;
+  outline: 0;
+  font-weight: bold;
+}
+
+/* Altera a cor do link quando passa o mouse em cima*/
+ul.topbar li a:hover {
+  color: #d90971;
+}
+
+/* Esconde os itens da lista quando a resolução da tela for pequena */
+ul.topbar li.icon {
+  display: none;
+}
+
+/* Quando a tela é menor do que 680 pixels de largura, ocultar todos os itens da lista. Mostra o item da lista que contém o link para abrir e fechar a nav superior (li.icon) */
+@media screen and (max-width: 680px) {
+  ul.topbar li {
+    display: none;
+  }
+  ul.topbar li.icon {
+    display: block;
+    float: right; /*O ícone será exibido ao lado direito*/
+  }
+}
+
+/*A classe responsiva é adicionada à ul superior com o JavaScript quando o usuário clica no ícone. Esta classe faz com que os itens principais do menu fiquem ok em telas menores */
+@media screen and (max-width: 680px) {
+  ul.topbar.responsive {
+    position: relative;
+    background: rgba(71, 2, 90, 0.8);
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    line-height: 5px;
+    width: 100%;
+  }
+  ul.topbar.responsive li.icon {
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+    top: 0;
+  }
+  ul.topbar.responsive li {
+    text-align: center;
+    float: none;
+    padding: 0;
+    display: inline;
+  }
+  ul.topbar.responsive li a {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  li > a::after {
+    height: 2px;
+  }
+  li > a:hover::after,
+  li > a.active::after {
+    width: 20%;
+    background: #fff;
+  }
+}
