@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: ; */
+  /* font-family: ; */
+}
+
+h1 {
+  /*  color: ; */
+  margin: 20px 0;
+}
+
+.progress {
+  height: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.progress--bar {
+  /* background-color: ; */
+  height: 100%;
+  transition: all ease 0.5s;
+}
+
+.questionArea,
+.scoreArea {
+  display: none;
+}
+
+.questionArea {
+  max-width: 500px;
+  width: 100%;
+}
+
+.question {
+  /*  color: ; */
+  font-size: 18px;
+  margin: 20px 0;
+}
+.option {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  /* background-color: ; */
+  border-radius: 10px;
+  margin-bottom: 5px;
+  /*  color: ; */
+  font-size: 16px;
+  cursor: pointer;
+}
+.option span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-right: 10px;
+  /* background-color: ; */
+  /*  color: ; */
+}
+
+/*
+.option:hover {
+  background-color: ;
+}
+*/
+
+.scoreArea {
+  /* background-color: ; */
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.prizeImage {
+  width: auto;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.scoreText1 {
+  /*  color: ; */
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.scorePct {
+  /*  color: ; */
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.scoreText2 {
+  font-size: 16px;
+  /*  color: ; */
+  margin-bottom: 10px;
+}
+
+.scoreArea button {
+  border: 0;
+  border-radius: 10px;
+  /* background-color: ; */
+  /*  color: ; */
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/*
+.scoreArea button:hover {
+  background-color: ; 
+}
+*/
+
+footer {
+  margin-top: 20px;
+  /*  color: ; */
+  font-size: 13px;
+}
