@@ -48,10 +48,12 @@ function showQuestion() {
 }
 
 function optionClickEvent(e) {
-  // Verifique qual questão foi clicada recuperando o atributo data-op. Use parseInt para formatar o atributo. Atribua o valor a uma variável.s
-  // Se a resposta clicada foi a correta, incremente a variável correctAnswers
-  // Incremente a variável currentQuestion
-  // Chame a função showQuestion
+  let clickedOption = parseInt(e.target.getAttribute("data-op"));
+  if (questions[currentQuestion].answer === clickedOption) {
+    correctAnswers++;
+  }
+  currentQuestion++;
+  showQuestion();
 }
 
 function finishQuiz() {
