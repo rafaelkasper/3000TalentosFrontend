@@ -1,5 +1,7 @@
 # Atividade ReactJS - Api com React
 
+- Nesta atividade vamos criar um buscador de repositórios do Github!
+
 - Crie um projeto e faça as devidas instalações
 
 - Crie uma página principal que deve ter um input para entrada de dados e um botão Buscar
@@ -19,3 +21,4 @@
 - Estilize suas páginas
 
 PS: Antes de construir o card, faça a requisição no thunderclient para saber quais dados são retornados
+PS2: Se quiser pode variar, utilizando outra api que ofereça funções de busca como a PokeApi, JSON Placeholder, etc.
