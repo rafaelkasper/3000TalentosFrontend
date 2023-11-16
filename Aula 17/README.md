@@ -1,14 +1,8 @@
-# Atividade ReactJS - React Router
+# React + Vite
 
-- Crie um novo projeto e faça as instalações.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- Dentro de src crie os arquivos login.jsx, home.jsx e error.jsx, retornando apenas um texto com o nome da página.
-  
-- No arquivo Routes.jsx faça as configurações de rota.
-  
-- No arquivo login.jsx crie um formulário e suas funções e na função de login crie uma chave chamada authenticated e salve em localStorage com "true" caso o login esteja correto e redirecione para home.
+Currently, two official plugins are available:
 
-- No home.jsx faça o tratamento de logout e redirecionamento caso authenticated seja false.
-
-
-
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
