@@ -7,3 +7,11 @@
 - No arquivo login.jsx crie um formulário e implemente as funções necessárias. Na função de login use localStorage e use a chave authenticated como true.
 
 - Crie um arquivo Routes.jsx e faça as configurações de rota. Recupere o valor authenticated do localStorage e condicione para a tela de login caso o usuário não esteja logado.
+
+- Projeto de exemplo rodando: https://financas-pessoais-wine.vercel.app/
+
+
+
+PLUS
+- Caso haja tempo, tentar implementar a lógica de salvar os dados em localStorage.
+- Estilizar utilizando Material UI
