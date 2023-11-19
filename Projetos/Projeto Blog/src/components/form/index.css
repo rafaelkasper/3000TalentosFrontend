@@ -1,0 +1,30 @@
+.post-form {
+  background-color: #f5f5f5; /* Cor de fundo */
+  padding: 20px;
+  border: 1px solid #ddd; /* Borda fina cinza */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-form button {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}

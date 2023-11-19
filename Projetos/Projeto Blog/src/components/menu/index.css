@@ -1,0 +1,30 @@
+.nav-wrapper {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto branca */
+  padding: 10px;
+}
+
+.nav-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.nav-wrapper li {
+  padding: 5px;
+}
+
+.nav-wrapper li:hover {
+  text-decoration: underline;
+}
+
+/* Estilização específica para os links */
+.nav-wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-wrapper a:hover {
+  text-decoration: underline;
+}

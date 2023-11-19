@@ -1,0 +1,11 @@
+.footer {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto branca */
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
